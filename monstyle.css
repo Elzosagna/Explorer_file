@@ -21,13 +21,12 @@ div.contenu {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px 3px 1px 3px;
-	height: 641px;
+	height: 500px;
+	opacity: 0.9;
 }
 div.main {
 width: 95%;
 display:table;
-border:0.18rem solid #798081;
-background-color:rgb(204, 204, 204,0.5);
 border-radius:8px 8px 8px 8px;
 padding: 20px 0 20px 0;
 margin-right: auto;
@@ -38,17 +37,16 @@ margin-bottom:20px;
 .liens{
 float:left;
 width:33%;
-height:170px;
+height:170
 }
 .demie{
 width:50%;
-/* height:200px; */
+
 float:left;
 }
 .plein{
 width:100%;
 float:left;
-/* height:170px; */
 }
 .footer {
 width: 100%; /* On a indiqu� une largeur (obligatoire) */
@@ -83,7 +81,7 @@ margin-left:15px;
 img {
 vertical-align:top;
 margin:0 5px 0 5px;
-//margin:0 0.8em 0 0;
+margin:0 0.8em 0 0;
 }
 /*
 pour les tableaux
@@ -155,12 +153,10 @@ max-width: 100%;
 }
 div.main {
 	display:block;
-/* 	width: 98%; */
 	width: 100%;
 	border:0;
 	border-radius:0;
 	padding:0px;
-/* 	margin: auto; */
 	margin:0;
 	max-width: 100%;
 }
@@ -168,7 +164,6 @@ div.main {
 	border:0.18rem solid #798081;
 	background-color:#cccccc;
 	border-radius:8px 8px 8px 8px;
-	/* position:static; */
 	width: 100%;
 	padding:20px 0 0 0;
 	font-size: 0.2em;
@@ -220,16 +215,4 @@ background: #60b8fa;
 position: relative;
 color: #000;
 font-size: 1.5em;
-}
-
-
-
-#sup{
-	height: 39px;
-	position: relative;
-	top: 10px;
-	border-radius: 13px;
-	width: 216px;
-	color: blue;
- font-size: 1.5em;
 }

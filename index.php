@@ -100,12 +100,13 @@ $chemin = $data.'/'.$dir;
  							<input type="submit" id="start-menu" name="supprimer" value="Supprimer">
 
 							<!-- *********Formulaire de Copie dossier********* -->
-							<input type="text" class="nom_doc" name="copier" id="docopier" placeholder="Non du doc à copier">
-        			<input type="text" class="nom_doc" name="copier1" id="docopier1">
-        			<input type="submit" id="start-menu" name="validcopie" value="Copier fichier">
+							<!-- <input type="text" name="copier" id="docopier" placeholder="Non du doc à copier">
+        			<input type="text" name="copier1" id="docopier1" placeholder="Spécificier la destination">
+        			<input type="submit" name="validcopie" value="Copier fichier"> -->
 						 </form>
 
-						 <?php //les fonctions de Création, de Suppression et de Copie
+						 <!-- les fonctions de Création, de Suppression et de Copie -->
+						 <?php
 						 	if(isset($_POST['nom'])) //si le nom existe pas
 						 	{
 						 		$nom_doc = $_POST['nom'];
@@ -134,14 +135,18 @@ $chemin = $data.'/'.$dir;
 							}
 							header('location: index.php');//actualiser la page
     					}
-							// Fin de suppression
+							// Fin de la suppression
 
 							//copie et coller
-							$file = 'example.txt';
-							$newfile = 'example.txt.bak';
-							if (!copy($file, $newfile)) {
-    						echo "La copie $file du fichier a échoué...\n";
-							}
+							// if (isset($_POST['Validcopie'])){
+							// 	$docopie = $_POST['copier'];
+							// 	$docopie1 = $_POST['copier1'];
+							// 	$file = 'partage'.'/'.$docopie.'';
+							// 	$newfile = 'partage'.'/'.$docopie1.'';
+							// 	if (!copy($file, $newfile)) {
+							// 		echo "La copie $file du fichier a échoué...\n";
+							// 	}
+							// }
 							//copie et coller
 						  ?>
 					 </div>
